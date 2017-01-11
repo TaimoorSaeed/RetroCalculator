@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B5C79271E252FE600D41447 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5C79261E252FE600D41447 /* Launch Screen.storyboard */; };
 		8B95461D1E1D459100C47E2D /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B95461C1E1D459100C47E2D /* Minecraft.ttf */; };
 		8B95461F1E1D646D00C47E2D /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B95461E1E1D646D00C47E2D /* btn.wav */; };
 		8BD8FBB81E1CEE6700C6D7A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD8FBB71E1CEE6700C6D7A3 /* AppDelegate.swift */; };
@@ -18,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8B5C79261E252FE600D41447 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		8B95461C1E1D459100C47E2D /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 		8B95461E1E1D646D00C47E2D /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = btn.wav; path = ../btn.wav; sourceTree = "<group>"; };
 		8BD8FBB41E1CEE6700C6D7A3 /* RetroCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,7 +66,6 @@
 				8BD8FBBE1E1CEE6700C6D7A3 /* Assets.xcassets */,
 				8BD8FBC01E1CEE6700C6D7A3 /* LaunchScreen.storyboard */,
 				8BD8FBC31E1CEE6700C6D7A3 /* Info.plist */,
-				8B5C79261E252FE600D41447 /* Launch Screen.storyboard */,
 			);
 			path = RetroCalculator;
 			sourceTree = "<group>";
@@ -132,7 +129,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B5C79271E252FE600D41447 /* Launch Screen.storyboard in Resources */,
 				8B95461F1E1D646D00C47E2D /* btn.wav in Resources */,
 				8BD8FBC21E1CEE6700C6D7A3 /* LaunchScreen.storyboard in Resources */,
 				8BD8FBBF1E1CEE6700C6D7A3 /* Assets.xcassets in Resources */,
