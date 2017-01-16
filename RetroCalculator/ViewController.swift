@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var LblOutput: UILabel!
     
+    
     var btnSound : AVAudioPlayer!
     
     enum Operation: String {
@@ -29,7 +30,15 @@ class ViewController: UIViewController {
     var rightValStr = ""
     var result = ""
     
-
+    @IBAction func clearBtn(_ sender: Any) {
+        runningNumber = ""
+        rightValStr = ""
+        leftValStr = ""
+        result = ""
+        currentOperations = Operation.Empty
+        LblOutput.text = "\(Int(0))"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
