@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,13 +24,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchbg" translatesAutoresizingMaskIntoConstraints="NO" id="r2D-UT-Qta">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Retro-Calc" translatesAutoresizingMaskIntoConstraints="NO" id="Ezh-sV-wPs">
-                                <rect key="frame" x="67" y="39" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Retro-Calc" translatesAutoresizingMaskIntoConstraints="NO" id="Ezh-sV-wPs">
+                                <rect key="frame" x="0.0" y="39" width="375" height="111"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="robot" translatesAutoresizingMaskIntoConstraints="NO" id="zlR-6b-orb">
-                                <rect key="frame" x="99" y="189" width="176" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot" translatesAutoresizingMaskIntoConstraints="NO" id="zlR-6b-orb">
+                                <rect key="frame" x="0.0" y="189" width="375" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="swC-oA-hgf"/>
+                                </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchground" translatesAutoresizingMaskIntoConstraints="NO" id="N5E-ls-g1Q">
                                 <rect key="frame" x="0.0" y="584" width="375" height="83"/>
@@ -41,11 +42,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Ezh-sV-wPs" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="19" id="09P-Ux-1ww"/>
+                            <constraint firstItem="zlR-6b-orb" firstAttribute="top" secondItem="Ezh-sV-wPs" secondAttribute="bottom" constant="39" id="4Ja-UR-WHV"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="r2D-UT-Qta" secondAttribute="bottom" id="87m-KT-uD6"/>
                             <constraint firstItem="r2D-UT-Qta" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="OsC-au-0ma"/>
+                            <constraint firstItem="Ezh-sV-wPs" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Qce-Bf-yYg"/>
+                            <constraint firstAttribute="trailing" secondItem="zlR-6b-orb" secondAttribute="trailing" id="a5t-9q-oFg"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="N5E-ls-g1Q" secondAttribute="bottom" id="aOL-XJ-fzL"/>
                             <constraint firstItem="N5E-ls-g1Q" firstAttribute="leading" secondItem="r2D-UT-Qta" secondAttribute="leading" id="d2z-lp-H7U"/>
+                            <constraint firstAttribute="trailing" secondItem="Ezh-sV-wPs" secondAttribute="trailing" id="gPp-un-Wep"/>
                             <constraint firstAttribute="trailing" secondItem="r2D-UT-Qta" secondAttribute="trailing" id="hcb-yi-Nrt"/>
+                            <constraint firstItem="zlR-6b-orb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="m4a-At-okU"/>
                             <constraint firstItem="N5E-ls-g1Q" firstAttribute="trailing" secondItem="r2D-UT-Qta" secondAttribute="trailing" id="qRh-us-kAQ"/>
                             <constraint firstItem="r2D-UT-Qta" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="txG-r9-TxO"/>
                         </constraints>
@@ -53,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="50.625" y="373.94366197183098"/>
         </scene>
     </scenes>
     <resources>
